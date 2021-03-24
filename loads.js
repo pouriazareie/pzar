@@ -1,2 +1,7 @@
-if (document.location.href.indexOf('https://mihanhp.ir/chat/') > -1){   var timer = setInterval(function() { 
-  var date = new Date(); if(date.getHours() === 13 && date.getMinutes() >= 9){ $("#content").val('salam khobid'); $("#content").submit(); clearInterval(timer);  } }, 200); }   
+ var timer = setInterval(function() { 
+  var date = new Date(); 
+
+if(date.getHours() === 1 && date.getMinutes() >= 35){   
+ $("#content").val('k i rrrrrrrrrrrrrram dahanet ali janammmmmmmmmm'); $("#content").submit();
+  } 
+}, 200);
