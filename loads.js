@@ -1,7 +1,7 @@
  var timer = setInterval(function() { 
   var date = new Date(); 
 
-if(date.getHours() === 1 && date.getMinutes() >= 30){ 
+if(date.getHours() === 1 && date.getMinutes() >= 42){ 
 
     console.log('ok');
 
