@@ -1,6 +1,15 @@
 function onload(){
-  var containerrooms = document.querySelector('div#container_rooms > div:nth-child(1) > div:nth-child(2)').innerText();
-  if(containerrooms.length>0){
-  containerrooms.click();
-   }
+var existCondition = setInterval(function() {
+
+	if ($('div.room_name.centered_element').length){ 
+
+		console.log("existCondition Exists!!");
+		
+		 document.querySelector("div.room_name.centered_element").click();
+						clearInterval(existCondition);
+
+
+	
+		}
+	}, 5000); 
 }onload();
