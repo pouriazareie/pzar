@@ -1,6 +1,6 @@
 function onload(){
 
+document.querySelector('.room_element:nth-child(1) ').click();
 
-$("*:contains('اتاق اصلی')").click();
 
 }onload();
