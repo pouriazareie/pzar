@@ -1,6 +1,6 @@
 var timer = setInterval(function() { 
   var date = new Date();
-  if(date.getMinutes() >= 10){ 
+  if(date.getMinutes() >= 0){ 
 function sleep(mss) {return new Promise(resolve => setTimeout(resolve, mss));}
 (async function(){
  for (var ii=0;ii<1;)
