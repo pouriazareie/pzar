@@ -3,7 +3,7 @@ var timer = setInterval(function() {
   if(date.getMinutes() >= 10){ 
 function sleep(mss) {return new Promise(resolve => setTimeout(resolve, mss));}
 (async function(){
- for (var ii=0;ii<9999999;)
+ for (var ii=0;ii<1;)
    {
  $("#content").val(Math.random().toString(32).substr(2, 24)+"      sher sher sher");
   ++ii
