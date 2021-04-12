@@ -37,16 +37,16 @@ var dealys=(((v2-v1).toFixed(0))/1000).toFixed(0);
  if(finalresualt.length<100 && dealys>=1){
         {
 console.log(finalresualt,finalresualt.length);
-		$("#content").val("aliz khafe kar kon toole sag");
+	//	$("#content").val("aliz khafe kar kon toole sag");
 
 console.log(dealys);
-    $("#content").submit();
+  //  $("#content").submit();
 }
 
   }
 }
 
-clearInterval(timer2);
+//clearInterval(timer2);
 	
 	}
 }
