@@ -1,4 +1,4 @@
-(async ()=>{
+
 var date = new Date();
 
   if(date.getHours()===9 && date.getMinutes()>=0 && date.getSeconds()>=0)
@@ -17,7 +17,7 @@ $("#content").val("tiger shire alireza rideeeeeeeeeeee"+Math.random().toString(1
 }
 
 (function loop() {
-    var rand = Math.round(Math.random() *10);
+    var rand = Math.round(Math.random() *4);
     setTimeout(function() {
             doSomething();
 
@@ -31,4 +31,3 @@ $("#content").val("tiger shire alireza rideeeeeeeeeeee"+Math.random().toString(1
 
 
 }
-})();
