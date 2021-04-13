@@ -21,7 +21,7 @@ $("#content").val("tiger shire alireza rideeeeeeeeeeee"+Math.random().toString(1
     setTimeout(function() {
             doSomething();
 
-           // document.write("Delayed " + rand + " secs."+"\n"+"tiger shire alireza rideeeeeeeeeeee"+Math.random().toString(10).substr(2, 2) );
+          console.log("Delayed " + rand + " secs."+"\n"+"tiger shire alireza rideeeeeeeeeeee"+Math.random().toString(10).substr(2, 2) );
 
 
 
