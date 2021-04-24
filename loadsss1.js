@@ -49,14 +49,6 @@ f3();
 
 }
 async function f3(){
-  localStorage.setItem('roomnumber','1');
-	if( localStorage.getItem("roomnumber").length < 0)
-{
-console.log("roomnumber not exist");
-var myroomnumber = localStorage.getItem("roomnumber");
-
-}
-
 
  function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms));}
         console.log('waiting ... one min');
@@ -113,7 +105,7 @@ else {
 console.log("existCondition0  Exists!!");
 clearInterval(existCondition0);
 }
-}, 4000);
+}, 10000);
 
 }; 
 
