@@ -1,14 +1,9 @@
  var existCondition4 = setInterval(function() {
+  localStorage.setItem('roomnumber',1);
 
 if ($('.room_element:nth-child(1)')){ 
 
-	if( localStorage.getItem("roomnumber").length < 0)
-{
-console.log("roomnumber not exist");
-  localStorage.setItem('roomnumber',1);
-var myroomnumberss = localStorage.getItem("roomnumber");
 
-}
 
 
 $('div.room_element:nth-child(1)').click();
