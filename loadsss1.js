@@ -22,7 +22,7 @@ function f1(){
         document.cookie = name + "=" + value + expires + "; path=/";                    
     }
 
-//clearListCookies();
+clearListCookies();
 
 f2();
 }
