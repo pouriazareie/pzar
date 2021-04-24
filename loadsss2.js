@@ -13,7 +13,7 @@ var myroomnumberss = localStorage.getItem("roomnumber");
 
 console.log("existCondition4 Exists!!");
 
-
+document.querySelector("#container_rooms > div:nth-child(1) > div:nth-child(2) > div > div.room_name.centered_element").click();
 $('.room_element:nth-child('+roomnumberss+')').click();
 clearInterval(existCondition4);
 }
