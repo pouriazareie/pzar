@@ -8,6 +8,12 @@ ssconsole.log("textsend not exist");
 var textsendss= " k i r a m  d a h a n e t a l i r e z a ";
 
 }
+if( localStorage.getItem("startatmin").length < 0)
+{
+ssconsole.log("startatmin not exist");
+var startatminss= 0;
+
+}
 
 
 var arr=[];
