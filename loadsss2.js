@@ -35,7 +35,7 @@ console.log("existCondition0 starting ...");
 		getGuestLogin();
 var arrayzz=localStorage.getItem('arrayz');
 arrayzz =arrayzz.split(",");
-var wrongTitle = `میهن چت | چت | چت روم | چت فارسی | فارسی چت | پرشین چت | چتروم`;
+var wrongTitle = `میهن چت - چت - چت روم - چت فارسی - فارسی چت - پرشین چت - چتروم`;
 var pageTitle = document.querySelector("head > title").innerText;
 if (pageTitle.indexOf(wrongTitle.toString())!==-1){
 console.log("yes ...");
