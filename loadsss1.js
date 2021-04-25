@@ -20,6 +20,6 @@ function f1(){
     }
 clearListCookies();
 
-}
+}   
 
 f1();
