@@ -46,6 +46,9 @@ console.log(rnduser);
 		console.log("existCondition2 Exists!!");
 		$('#guest_username').val(rnduser);
 				clearInterval(existCondition2);
+
+	}, 500); 
+	await sleep (1000)
 		var existCondition3 = setInterval( function() {
 	if ($('.theme_btn.full_button.large_button').length){ 
 		console.log("existCondition3 Exists!!");
@@ -53,9 +56,6 @@ console.log(rnduser);
 		clearInterval(existCondition3);
 		}
 	}, 500); 
-	}, 500); 
-	await sleep (1000)
-
 	console.log("existCondition0 dont Exists!!");
 }
 else {
@@ -64,5 +64,5 @@ clearInterval(existCondition0);
 }
 }, 6000);
 }; 
-
+ 
 f2();
