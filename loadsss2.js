@@ -26,7 +26,6 @@ async function f3(){
 var existCondition0 = setInterval(  async function() {
 console.log("existCondition0 starting ...");
 	await sleep (1000)
-		getGuestLogin();
 var arrayzz=localStorage.getItem('arrayz');
 arrayzz =arrayzz.split(",");
 var wrongTitle = `میهن چت - چت - چت روم - چت فارسی - فارسی چت - پرشین چت - چتروم`;
@@ -37,10 +36,13 @@ console.log("yes ...");
 var existCondition2 = setInterval( function() {
 var rnduser=arrayzz[Math.floor(Math.random()*arrayzz.length)];
 console.log(rnduser);
+if(getGuestLogin()){
+			getGuestLogin();
+
 		console.log("existCondition2 Exists!!");
 		$('#guest_username').val(rnduser);
 				clearInterval(existCondition2);
-
+}
 	}, 500); 
 	await sleep (1000)
 		var existCondition3 = setInterval( function() {
