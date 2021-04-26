@@ -5,7 +5,7 @@ function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 if( localStorage.getItem("textsend").length < 0)
 {
 ssconsole.log("textsend not exist");
-var textsendss= " k i r a m  d a h a n e t a l i r e z a ";
+var textsendss= " s h i r a m  d a h a n e t a l i r e z a ";
 
 }
 if( localStorage.getItem("startatmin").length < 0)
@@ -17,11 +17,10 @@ var startatminss= 0;
 
 
 var arr=[];
-var date = new Date();
 
 var date = new Date();
 var timer2 = setInterval( async function() {
-  if( date.getMinutes() >= 1){ 
+  if( date.getMinutes() >= startatminss){ 
 
  
  
@@ -43,7 +42,7 @@ String.prototype.shuffle = function() {
 
 
 
-		console.log(textsendss.shuffle(14,"salam"));
+		console.log(textsendss.shuffle(14," "));
 }
 (function loop() {
 var date = new Date();
