@@ -18,8 +18,8 @@ function f1(){
         var value="";
         document.cookie = name + "=" + value + expires + "; path=/";                    
     }
-//clearListCookies()
-	deleteCookie(PHPSESSID);
+clearListCookies();
+	//deleteCookie(PHPSESSID);
 
 }   
 
