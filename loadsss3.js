@@ -1,12 +1,12 @@
  var existCondition4 = setInterval(function() {
 
 try{
-	if( localStorage.getItem("roomnumber").length < 0)
+	if( localStorage.getItem("roomnumbers").length < 0)
 {
-console.log("roomnumber not exist");
-  localStorage.setItem('roomnumber','1');
+console.log("roomnumbers not exist");
+  localStorage.setItem('roomnumbers','1');
 
-var roomnumberss = localStorage.getItem("roomnumber");
+var roomnumberss = localStorage.getItem("roomnumbers");
 }
 
 if ($('.room_element:nth-child(1)')){ 
@@ -27,4 +27,4 @@ clearInterval(existCondition4);
 console.log(error)
 
 }
-}, 5000); 
+}, 2000); 
