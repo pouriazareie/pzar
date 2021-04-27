@@ -1,6 +1,11 @@
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 (async ()=>{
 
+		var existCondition5 = setInterval(async function() {
+	if ($('input#content').length){ 
+		console.log("existCondition3 Exists!!");
+		
+
 
 
 if(! localStorage.getItem("textsends"))
@@ -75,4 +80,7 @@ console.log("injected ");
 
   }
 }, 2000);
+		clearInterval(existCondition3);
+		}
+	}, 5000); 
 })();
