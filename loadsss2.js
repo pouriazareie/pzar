@@ -33,12 +33,12 @@ var pageTitle = document.querySelector("head > title").innerText;
 if (pageTitle.indexOf(wrongTitle.toString())!==-1){
 console.log("yes ...");
 	await sleep (1000)
-var existCondition2 = setInterval( function() {
+var existCondition2 = setInterval(async function() {
+			getGuestLogin();
+
 var rnduser=arrayzz[Math.floor(Math.random()*arrayzz.length)];
 console.log(rnduser);
-if(getGuestLogin()){
-			getGuestLogin();
-}
+
 	
 	await sleep (1000)
 
