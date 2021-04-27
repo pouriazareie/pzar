@@ -1,7 +1,7 @@
  var existCondition4 = setInterval(function() {
 
 try{
-	if( localStorage.getItem("roomnumbers").length < 0)
+	if( !localStorage.getItem("roomnumbers"))
 {
 console.log("roomnumbers not exist");
   localStorage.setItem('roomnumbers','1');
