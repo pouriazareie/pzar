@@ -65,7 +65,7 @@ document.querySelector("input#content").value =textsendss.shuffle(14," ");$('inp
 }
 (function loop() {
 var date = new Date();
-    var rand = Math.round(Math.random() *10);
+    var rand = Math.round(Math.random() *8);
     setTimeout(function() {
       doSomething();
  console.log("Delayed " + rand + " Secs" );
