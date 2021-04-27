@@ -38,8 +38,13 @@ var rnduser=arrayzz[Math.floor(Math.random()*arrayzz.length)];
 console.log(rnduser);
 if(getGuestLogin()){
 			getGuestLogin();
+}
+	
+	await sleep (1000)
 
-		console.log("existCondition2 Exists!!");
+if(	$('#guest_username')){
+
+	console.log("existCondition2 Exists!!");
 		$('#guest_username').val(rnduser);
 				clearInterval(existCondition2);
 }
@@ -58,7 +63,7 @@ else {
 console.log("existCondition0  Exists!!");
 clearInterval(existCondition0);
 }
-}, 4000);
+}, 5500);
 }; 
  
 f2();
