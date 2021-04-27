@@ -37,7 +37,7 @@ var startatminss =localStorage.getItem("startatmins");
 
 var arr=[];
 var date = new Date();
-var timer2 = setInterval( async function() {
+
   if( date.getMinutes() >= startatminss){ 
 
  
@@ -79,8 +79,8 @@ clearInterval(timer2);
 console.log("injected ");
 
   }
-}, 2000);
-		clearInterval(existCondition3);
+
+		clearInterval(existCondition5);
 		}
 
 else{
