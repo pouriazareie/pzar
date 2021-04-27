@@ -34,7 +34,7 @@ if (pageTitle.indexOf(wrongTitle.toString())!==-1){
 console.log("yes ...");
 	await sleep (1000)
 var existCondition2 = setInterval(async function() {
-			getGuestLogin();
+			if(getGuestLogin()){
 
 var rnduser=arrayzz[Math.floor(Math.random()*arrayzz.length)];
 console.log(rnduser);
@@ -48,6 +48,7 @@ if(	document.querySelector("#guest_username")){
 		document.querySelector("#guest_username").value=rnduser;
 				clearInterval(existCondition2);
 }
+			}
 	}, 500); 
 	await sleep (1000)
 		var existCondition3 = setInterval( function() {
