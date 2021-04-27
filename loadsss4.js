@@ -2,19 +2,32 @@ function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 (async ()=>{
 
 
-if( localStorage.getItem("textsend").length < 0)
+if(! localStorage.getItem("textsends"))
 {
-ssconsole.log("textsend not exist");
+console.log("textsend not exist");
 var textsendss= " s h i r a m  d a h a n e t a l i r e z a ";
 
 }
-if( localStorage.getItem("startatmin").length < 0)
+
+
+else{
+
+var textsendss =localStorage.getItem("textsends");
+
+}
+if(! localStorage.getItem("startatmins"))
 {
-ssconsole.log("startatmin not exist");
+console.log("startatmin not exist");
 var startatminss= 0;
 
 }
+else
 
+{
+
+var startatminss =localStorage.getItem("startatmins");
+
+}
 
 var arr=[];
 
