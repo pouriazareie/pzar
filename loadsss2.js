@@ -35,10 +35,11 @@ console.log("yes ...");
 	await sleep (1000)
 var existCondition2 = setInterval(async function() {
 
-var rnduser=arrayzz[Math.floor(Math.random()*arrayzz.length)];
-console.log(rnduser);
+
 
 			if(document.querySelector("button.intro_guest_btn.large_button_rounded.default_btn")){
+var rnduser=arrayzz[Math.floor(Math.random()*arrayzz.length)];
+//console.log(rnduser);
 	document.querySelector("button.intro_guest_btn.large_button_rounded.default_btn").click();
 	await sleep (1000)
 
