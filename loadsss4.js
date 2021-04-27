@@ -1,6 +1,9 @@
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 (async ()=>{
 
+var date = new Date();
+var timer2 = setInterval( async function() {
+  if( date.getMinutes() >= startatminss){ 
 
 if(! localStorage.getItem("textsends"))
 {
@@ -31,9 +34,6 @@ var startatminss =localStorage.getItem("startatmins");
 
 var arr=[];
 
-var date = new Date();
-var timer2 = setInterval( async function() {
-  if( date.getMinutes() >= startatminss){ 
 
  
  
