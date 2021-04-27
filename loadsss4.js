@@ -3,7 +3,7 @@ function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
 		var existCondition5 = setInterval(async function() {
 	if ($('input#content').length){ 
-		console.log("existCondition3 Exists!!");
+		console.log("existCondition5 Exists!!");
 		
 
 
@@ -82,5 +82,12 @@ console.log("injected ");
 }, 2000);
 		clearInterval(existCondition3);
 		}
+
+else{
+console.log("existCondition5 dont Exists");
+
+
+
+}
 	}, 5000); 
 })();
