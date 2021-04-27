@@ -13,6 +13,7 @@ if ($('.room_element:nth-child(1)')){
 
 
 
+var roomnumberss = localStorage.getItem("roomnumbers");
 
 $('div.room_element:nth-child('+roomnumberss+')').click();
 
