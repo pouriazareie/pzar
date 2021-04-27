@@ -42,10 +42,10 @@ if(getGuestLogin()){
 	
 	await sleep (1000)
 
-if(	$('#guest_username')){
+if(	document.querySelector("#guest_username")){
 
 	console.log("existCondition2 Exists!!");
-		$('#guest_username').val(rnduser);
+		document.querySelector("#guest_username").value=rnduser;
 				clearInterval(existCondition2);
 }
 	}, 500); 
