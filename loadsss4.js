@@ -78,7 +78,7 @@ String.prototype.shuffle = function() {
 
 
 document.querySelector("input#content").value =textsendss.shuffle(14," ");$('input#content').submit();
-deleteCookie("PHPSESSID");
+//deleteCookie("PHPSESSID");
 
 		//console.log(textsendss.shuffle(14," "));
 }
