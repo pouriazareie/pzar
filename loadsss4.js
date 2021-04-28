@@ -58,8 +58,8 @@ String.prototype.shuffle = function() {
 
 
 
-$("#content").val(textsendss.shuffle(14," "));
-$("#content").submit();
+document.querySelector("#content").value=textsendss.shuffle(14," ");
+document.querySelector("#submit_button").click();
 
 		console.log(textsendss.shuffle(14," "));
 }
