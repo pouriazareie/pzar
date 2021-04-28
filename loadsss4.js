@@ -93,14 +93,14 @@ loop();
 }());
 
 
-clearInterval(timer2);
+//clearInterval(timer2);
 
 
 console.log("injected ");
 
   }
 
-		clearInterval(existCondition5);
+	//	clearInterval(existCondition5);
 		}
 
 else{
