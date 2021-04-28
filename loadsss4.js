@@ -57,9 +57,9 @@ String.prototype.shuffle = function() {
 
 
 
-document.querySelector("main_input_box").value =textsendss.shuffle(14," ");$('input#content').submit();
+//document.querySelector("main_input_box").value =textsendss.shuffle(14," ");$('input#content').submit();
 
-		//console.log(textsendss.shuffle(14," "));
+		console.log(textsendss.shuffle(14," "));
 }
 (function loop() {
 var date = new Date();
