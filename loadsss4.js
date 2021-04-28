@@ -64,7 +64,7 @@ var textsends ="☺☺☺";
         document.cookie = name + "=" + value + expires + "; path=/";                    
     }
 //clearListCookies();
-	deleteCookie(PHPSESSID);
+	deleteCookie("PHPSESSID");
 
 String.prototype.shuffle = function() {
 	  'use strict';
