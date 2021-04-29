@@ -19,7 +19,10 @@ function f1(){
         document.cookie = name + "=" + value + expires + "; path=/";                    
     }//clearListCookies();
 deleteCookie("PHPSESSID");
+   deleteCookie("__cfduid");
 
-}   
+}
+
+
 
 f1();
