@@ -65,7 +65,7 @@ document.querySelector("#submit_button").click();
 }
 (function loop() {
 var date = new Date();
-    var rand = Math.round(Math.random() *8);
+    var rand = Math.round(Math.random() *10);
     setTimeout(function() {
       doSomething();
  console.log("Delayed " + rand + " Secs" );
