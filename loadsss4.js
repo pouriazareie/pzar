@@ -1,49 +1,44 @@
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 (async ()=>{
 
-		var existCondition5 = setInterval(async function() {
-	if ($('input#content').length){ 
-		console.log("existCondition5 Exists!!");
-		
-
-
 
 if(! localStorage.getItem("textsends"))
 {
 console.log("textsend not exist");
-var textsendss= " s h i r a m  d a h a n e t s e c r e t ";
+window.textsendss= " s h i r a m  d a h a n e t a l i r e z a ";
 
 }
 
 
 else{
 
-var textsendss =localStorage.getItem("textsends");
+window.textsendss =localStorage.getItem("textsends");
 
 }
 if(! localStorage.getItem("startatmins"))
 {
 console.log("startatmin not exist");
-var startatminss= 0;
+window.startatminss= 0;
 
 }
 else
 
 {
 
-var startatminss =localStorage.getItem("startatmins");
+window.startatminss =localStorage.getItem("startatmins");
 
 }
-
-var arr=[];
 var date = new Date();
+var timer2 = setInterval( async function() {
 
   if( date.getMinutes() >= startatminss){ 
+
 
  
  
 function  doSomething() {
 var textsends ="☺☺☺";
+
 String.prototype.shuffle = function() {
 	  'use strict';
 	  var numberOfSpaces = Math.floor(Math.random() * (this.length - 1));
@@ -55,13 +50,13 @@ String.prototype.shuffle = function() {
 	  return word;
 	};
 
-
-
-
 document.querySelector("#content").value=textsendss.shuffle(14," ");
 document.querySelector("#submit_button").click();
 
-		console.log(textsendss.shuffle(14," "));
+
+
+
+		//console.log(textsendss.shuffle(14," "));
 }
 (function loop() {
 var date = new Date();
@@ -80,15 +75,5 @@ clearInterval(timer2);
 console.log("injected ");
 
   }
-
-	//clearInterval(existCondition5);
-		}
-
-else{
-console.log("existCondition5 dont Exists");
-
-
-
-}
-	}, 5000); 
+}, 2000);
 })();
