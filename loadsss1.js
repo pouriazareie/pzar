@@ -17,8 +17,8 @@ function f1(){
         console.log(name);
         var value="";
         document.cookie = name + "=" + value + expires + "; path=/";                    
-    }clearListCookies();
-	//deleteCookie(PHPSESSID);
+    }//clearListCookies();
+deleteCookie(PHPSESSID);
 
 }   
 
