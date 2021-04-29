@@ -17,9 +17,11 @@ function f1(){
         console.log(name);
         var value="";
         document.cookie = name + "=" + value + expires + "; path=/";                    
-    }//clearListCookies();
-deleteCookie("PHPSESSID");
-   deleteCookie("__cfduid");
+    }
+
+clearListCookies();
+//deleteCookie("PHPSESSID");
+  // deleteCookie("__cfduid");
 
 }
 
