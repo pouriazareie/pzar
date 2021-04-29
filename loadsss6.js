@@ -1,38 +1,37 @@
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 (async ()=>{
 
-var date = new Date();
-var timer2 = setInterval( async function() {
-  if( date.getMinutes() >= startatminss){ 
 
 if(! localStorage.getItem("textsends"))
 {
 console.log("textsend not exist");
-var textsendss= " s h i r a m  d a h a n e t a l i r e z a ";
+window.textsendss= " s h i r a m  d a h a n e t a l i r e z a ";
 
 }
 
 
 else{
 
-var textsendss =localStorage.getItem("textsends");
+window.textsendss =localStorage.getItem("textsends");
 
 }
 if(! localStorage.getItem("startatmins"))
 {
 console.log("startatmin not exist");
-var startatminss= 0;
+window.startatminss= 0;
 
 }
 else
 
 {
 
-var startatminss =localStorage.getItem("startatmins");
+window.startatminss =localStorage.getItem("startatmins");
 
 }
+var date = new Date();
+var timer2 = setInterval( async function() {
 
-var arr=[];
+  if( date.getMinutes() >= startatminss){ 
 
 
  
@@ -57,7 +56,7 @@ document.querySelector("#submit_button").click();
 
 
 
-		console.log(textsendss.shuffle(14," "));
+		//console.log(textsendss.shuffle(14," "));
 }
 (function loop() {
 var date = new Date();
