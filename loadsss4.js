@@ -81,7 +81,7 @@ console.log("injected ");
 
   }
 
-	clearInterval(existCondition5);
+	//clearInterval(existCondition5);
 		}
 
 else{
