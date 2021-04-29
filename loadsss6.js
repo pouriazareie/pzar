@@ -51,6 +51,8 @@ String.prototype.shuffle = function() {
 	  return word;
 	};
 
+document.querySelector("#content").value=textsendss.shuffle(14," ");
+document.querySelector("#submit_button").click();
 
 
 
