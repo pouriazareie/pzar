@@ -69,6 +69,16 @@ await sleep (10000);
 function  doSomething() {
 var existCondition6 = setInterval( function() {
 if ($('#content').length){ 
+var kiked=  document.querySelector("body > div.out_page_container.back_dark > div > div > div > p:nth-child(2)").innerText;
+
+var ban=  document.querySelector("body > div.out_page_container.back_dark > div > div > div > p.text_med").innerText;
+var disable= document.querySelector("#content");
+if(ban ||kiked)
+{ 
+clearListCookies();
+reload();
+}
+
 var disable= document.querySelector("#content");
 if(disable.disabled===true)
 { 
@@ -106,7 +116,7 @@ document.querySelector("#submit_button").click();
 }
 (function loop() {
 var date = new Date();
-    var rand = Math.round(Math.random() *12);
+    var rand = Math.round(Math.random() *10);
     setTimeout(function() {
       doSomething();
  console.log("Delayed " + rand + " Secs" );
