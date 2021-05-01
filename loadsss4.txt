@@ -129,7 +129,6 @@ clearInterval(timer2);
 
 
 console.log("injected ");
-
   }
 }, 2000);
 })();
