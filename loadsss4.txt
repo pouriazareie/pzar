@@ -35,8 +35,54 @@ var timer2 = setInterval( async function() {
 
 
  
- 
+ async function clearListCookies()
+{   
+await sleep (10000);
+var cookies = document.cookie.split(";");
+for (var i = 0; i < cookies.length; i++)
+{   
+var spcook =  cookies[i].split("=");
+deleteCookie(spcook[0]);
+}
+}
+ function deleteCookie(cookiename)
+{
+var d = new Date();
+d.setDate(d.getDate() - 1);
+var expires = ";expires="+d;
+var name=cookiename;
+console.log(name);
+var value="";
+document.cookie = name + "=" + value + expires + "; path=/";                    
+}
+async function reload(){
+await sleep (10000);
+
+    var container =document.querySelector("body")
+    var content = container.innerHTML;
+    container.innerHTML= content; 
+    
+    console.log("Refreshed"); 
+}
+
+
 function  doSomething() {
+var existCondition6 = setInterval( function() {
+if ($('#content').length){ 
+var disable= document.querySelector("#content");
+if(disable.disabled===true)
+{ 
+clearListCookies();
+reload();
+}
+
+clearInterval(existCondition6);
+console.log("existCondition6 dont Exists!!");
+}
+console.log("dont existCondition6 dont Exists!!");
+
+}, 20000); 
+
 var textsends ="☺☺☺";
 
 String.prototype.shuffle = function() {
