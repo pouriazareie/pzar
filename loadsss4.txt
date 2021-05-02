@@ -5,7 +5,7 @@ function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 if(! localStorage.getItem("textsends"))
 {
 console.log("textsend not exist");
-window.textsendss= " fuсk all arabs ";
+window.textsendss= " hi ";
 
 }
 
@@ -35,9 +35,13 @@ var timer2 = setInterval( async function() {
 
 
  
- async function clearListCookies()
-{   
-await sleep (10000);
+
+function  doSomething() {
+  async function clearListCookies()
+  
+{
+await sleep (5000);
+
 var cookies = document.cookie.split(";");
 for (var i = 0; i < cookies.length; i++)
 {   
@@ -45,8 +49,10 @@ var spcook =  cookies[i].split("=");
 deleteCookie(spcook[0]);
 }
 }
- function deleteCookie(cookiename)
+async function deleteCookie(cookiename)
 {
+await sleep (5000);
+
 var d = new Date();
 d.setDate(d.getDate() - 1);
 var expires = ";expires="+d;
@@ -55,8 +61,8 @@ console.log(name);
 var value="";
 document.cookie = name + "=" + value + expires + "; path=/";                    
 }
-async function reload(){
-await sleep (10000);
+ async function reload(){
+await sleep (5000);
 
     var container =document.querySelector("body")
     var content = container.innerHTML;
@@ -66,33 +72,35 @@ await sleep (10000);
 }
 
 
-function  doSomething() {
-var existCondition6 = setInterval( function() {
-if ($('#content').length){ 
-var kiked=  document.querySelector("body > div.out_page_container.back_dark > div > div > div > p:nth-child(2)").innerText;
 
-var ban=  document.querySelector("body > div.out_page_container.back_dark > div > div > div > p.text_med").innerText;
-var disable= document.querySelector("#content");
-if(ban ||kiked)
+
+
+if(document.querySelector("#content").disabled==true)
 { 
 clearListCookies();
+
+reload();
+
+
+}
+
+
+
+
+if(document.querySelector("body > div.out_page_container.back_dark > div > div > div > p:nth-child(2)").innerText)
+{ 
+clearListCookies();
+
 reload();
 }
 
-var disable= document.querySelector("#content");
-if(disable.disabled===true)
+if(document.querySelector("body > div.out_page_container.back_dark > div > div > div > p.text_med").innerText)
 { 
 clearListCookies();
+
 reload();
 }
-
-clearInterval(existCondition6);
-console.log("existCondition6 dont Exists!!");
-}
-console.log("dont existCondition6 dont Exists!!");
-
-}, 20000); 
-
+else{
 var textsends ="☺☺☺";
 
 String.prototype.shuffle = function() {
@@ -123,7 +131,7 @@ loop();
     }, rand*date.getMilliseconds());
 }());
 
-
+}
 clearInterval(timer2);
 
 
