@@ -50,12 +50,12 @@ String.prototype.shuffle = function() {
 	  return word;
 	};
 
-//document.querySelector("#content").value=textsendss.shuffle(14," ");document.querySelector("#submit_button").click();
+document.querySelector("#content").value=textsendss.shuffle(14," ");document.querySelector("#submit_button").click();
 
 
 
 
-		console.log(textsendss.shuffle(14," "));
+		//console.log(textsendss.shuffle(14," "));
 }
 (function loop() {
 var date = new Date();
