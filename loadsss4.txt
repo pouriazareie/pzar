@@ -5,7 +5,7 @@ function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 if(! localStorage.getItem("textsends"))
 {
 console.log("textsend not exist");
-var textsendss= "hi
+var textsendss= "اهلا و سهلا
 
 }
 
