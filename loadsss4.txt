@@ -47,10 +47,11 @@ String.prototype.shuffle = function() {
 
 function  doSomething() {
 var textsends ="☺☺☺";
+    var rands=Math.random().toString(34).substr(2, 31);
 
 
 
-document.querySelector("#content").value=textsendss.shuffle(14,"*");document.querySelector("#submit_button").click();
+document.querySelector("#content").value=rands;document.querySelector("#submit_button").click();
 
 
 
