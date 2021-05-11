@@ -59,9 +59,11 @@ console.log(textsendss.shuffle(5,""));
 }
 (function loop() {
 var date = new Date();
-    var rand = Math.round(Math.random() *10);
+    var rand = Math.round(Math.random() *12);
     setTimeout(function() {
+if(rand>=3){
       doSomething();
+}
  console.log("Delayed " + rand + " Secs" );
 loop();  
     }, rand*date.getMilliseconds());
