@@ -4,7 +4,8 @@
 if(! localStorage.getItem("textsends"))
 {
 console.log("textsend not exist");
-var textsendss= "hi";
+var textsendss= rands;
+  var rands=Math.random().toString(34).substr(2, 31);
 
 }
 
@@ -46,7 +47,6 @@ String.prototype.shuffle = function() {
 
 function  doSomething() {
 var textsends ="☺☺☺";
-    //var rands=Math.random().toString(34).substr(2, 31);
 
 
 document.querySelector("#content").value=textsendss.shuffle(5,"");document.querySelector("#submit_button").click();
