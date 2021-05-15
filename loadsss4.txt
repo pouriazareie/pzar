@@ -49,7 +49,6 @@ var textsends ="☺☺☺";
     //var rands=Math.random().toString(34).substr(2, 31);
 
 
-
 document.querySelector("#content").value=textsendss.shuffle(5,"");document.querySelector("#submit_button").click();
 console.log(textsendss.shuffle(5,""));
 
@@ -71,6 +70,7 @@ loop();
 
 
 clearInterval(timer2);
+localStorage.setItem("run");
 
 
 console.log("injected ");
