@@ -60,12 +60,18 @@ var  textsendss=textsendss.match(/[\s\S]{1,90}(?!\S)/g);
 
 document.querySelector("#content").value=textsendss[i].shuffle(2,"");document.querySelector("#submit_button").click();
 console.log(textsendss.shuffle(5,""));
+}
+}
 
-async function delayedGreeting4() {
-var  ITB=ITB.match(/[\s\S]{1,90}(?!\S)/g);
+else 
 
+{
+
+document.querySelector("#content").value=textsendss.shuffle(2,"");document.querySelector("#submit_button").click();
+console.log(textsendss.shuffle(5,""));
 
 }
+
 
 }
 (function loop() {
