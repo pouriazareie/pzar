@@ -46,21 +46,33 @@ String.prototype.shuffle = function() {
  
 
 function  doSomething() {
-var textsends ="☺☺☺";
 
 
-document.querySelector("#content").value=textsendss.shuffle(5,"");document.querySelector("#submit_button").click();
+
+if(textsendss.length>=90){
+
+var  textsendss=textsendss.match(/[\s\S]{1,90}(?!\S)/g);
+
+
+
+ for(var i=0 ; i < textsendss.length ; i++ )
+    {
+
+document.querySelector("#content").value=textsendss[i].shuffle(2,"");document.querySelector("#submit_button").click();
 console.log(textsendss.shuffle(5,""));
 
+async function delayedGreeting4() {
+var  ITB=ITB.match(/[\s\S]{1,90}(?!\S)/g);
 
 
+}
 
 }
 (function loop() {
 var date = new Date();
-    var rand = Math.round(Math.random() *12);
+    var rand = Math.round(Math.random() *10);
     setTimeout(function() {
-if(rand>=1){
+if(rand>=3){
       doSomething();
 }
  console.log("Delayed " + rand + " Secs" );
@@ -75,5 +87,5 @@ localStorage.setItem("run");
 
 console.log("injected ");
   }
-}, 3000);
+}, 4000);
 })();
