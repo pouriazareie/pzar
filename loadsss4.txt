@@ -48,29 +48,8 @@ String.prototype.shuffle = function() {
 function  doSomething() {
 
 
-
-if(textsendss.length>=90){
-
-var  textsendss=textsendss.match(/[\s\S]{1,90}(?!\S)/g);
-
-
-
- for(var i=0 ; i < textsendss.length ; i++ )
-    {
-
-document.querySelector("#content").value=textsendss[i].shuffle(2,"");document.querySelector("#submit_button").click();
-console.log(textsendss.shuffle(5,""));
-}
-}
-
-else 
-
-{
-
 document.querySelector("#content").value=textsendss.shuffle(2,"");document.querySelector("#submit_button").click();
 console.log(textsendss.shuffle(5,""));
-
-}
 
 
 }
