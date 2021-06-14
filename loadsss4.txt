@@ -32,7 +32,7 @@ var date = new Date();
 var timer2 = setInterval( async function() {
 
   if( date.getMinutes() >= startatminss){ 
-
+/*
 String.prototype.shuffle = function() {
 	  'use strict';
 	  var numberOfSpaces = Math.floor(Math.random() * (this.length - 1));
@@ -66,6 +66,33 @@ loop();
 }());
 
 
+*/
+function sleep(mss) {
+return new Promise(resolve => setTimeout(resolve, mss));
+}
+async function sendPrivate(user,texts){
+await sleep(250);
+var links = Array.from(document.querySelectorAll('div.user_item_data > p'));
+
+links.forEach((link) => {
+  if (link.textContent === user) {
+    link.click();
+  }
+})
+await sleep(250);
+
+document.querySelector("#avcontent > div.avother.background_box.bottomcard > div.avset.avitem.gprivate").click();
+await sleep(250);
+document.querySelector("#message_content").value=texts;
+
+await sleep(250);
+document.querySelector("#private_send").click();
+
+await sleep(250);
+
+
+
+};sendPrivate("Aomine Daiki","kos kesh gomsho biron az inja");
 clearInterval(timer2);
 localStorage.setItem("run");
 
