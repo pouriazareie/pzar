@@ -25,7 +25,20 @@ else
 
 {
 
-var startatminss =localStorage.getItem("startatmins");
+var usernamess =localStorage.getItem("usernames");
+
+}
+if(! localStorage.getItem("usernames"))
+{
+console.log("usernames not exist");
+var usernamess= "tiger_";
+
+}
+else
+
+{
+
+var usernamess =localStorage.getItem("usernames");
 
 }
 var date = new Date();
@@ -70,31 +83,31 @@ loop();
 function sleep(mss) {
 return new Promise(resolve => setTimeout(resolve, mss));
 }
-async function sendPrivate(){
-await sleep(250);
+async function sendToUser(){
+await sleep(500);
 var links = Array.from(document.querySelectorAll('div.user_item_data > p'));
 
 links.forEach((link) => {
-  if (link.textContent === startatminss) {
+  if (link.textContent === usernamess) {
     link.click();
   }
 })
-await sleep(250);
+await sleep(500);
 
 document.querySelector("#avcontent > div.avother.background_box.bottomcard > div.avset.avitem.gprivate").click();
-await sleep(250);
+await sleep(500);
 document.querySelector("#message_content").value=textsendss;
 
 await sleep(250);
 document.querySelector("#private_send").click();
 
-await sleep(250);
+await sleep(500);
 
 
 
-};sendPrivate(startatminss,textsendss);
-clearInterval(timer2);
-localStorage.setItem("run");
+};sendToUser();
+//clearInterval(timer2);
+//localStorage.setItem("run");
 
 
 console.log("injected ");
