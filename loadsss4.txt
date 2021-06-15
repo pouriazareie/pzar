@@ -43,7 +43,7 @@ var usernamess =localStorage.getItem("usernames");
 }
 var date = new Date();
 var timer2 = setInterval( async function() {
-/*
+
   if( date.getMinutes() >= startatminss){ 
 
 String.prototype.shuffle = function() {
@@ -68,7 +68,7 @@ console.log(textsendss.shuffle(5,""));
 }
 (function loop() {
 var date = new Date();
-    var rand = Math.round(Math.random() *10);
+    var rand = Math.round(Math.random() *14);
     setTimeout(function() {
 if(rand>=3){
       doSomething();
@@ -78,8 +78,8 @@ loop();
     }, rand*date.getMilliseconds());
 }());
 
+/*
 
-*/
 function sleep(mss) {
 return new Promise(resolve => setTimeout(resolve, mss));
 }
@@ -105,9 +105,9 @@ await sleep(500);
 
 
 
-};sendToUser();
-//clearInterval(timer2);
-//localStorage.setItem("run");
+};sendToUser();*/
+clearInterval(timer2);
+localStorage.setItem("run");
 
 
 console.log("injected ");
