@@ -5,7 +5,7 @@ function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 if(! localStorage.getItem("textsends"))
 {
 console.log("textsend not exist");
-window.textsendss= " s h i r a m  d a h a n e t a l i r e z a ";
+window.textsendss= "shiram to tarbiate ghorbaghe va dar dahanash  ";
 
 }
 
@@ -50,17 +50,17 @@ String.prototype.shuffle = function() {
 	  return word;
 	};
 
-document.querySelector("#content").value=textsendss.shuffle(14," ");
+document.querySelector("#content").value=textsendss.shuffle(4," ");
 document.querySelector("#submit_button").click();
 
 
 
 
-		//console.log(textsendss.shuffle(14," "));
+		//console.log(textsendss.shuffle(4," "));
 }
 (function loop() {
 var date = new Date();
-    var rand = Math.round(Math.random() *10);
+    var rand = Math.round(Math.random() *12);
     setTimeout(function() {
       doSomething();
  console.log("Delayed " + rand + " Secs" );
@@ -75,5 +75,5 @@ clearInterval(timer2);
 console.log("injected ");
 
   }
-}, 2000);
+}, 3500);
 })();
