@@ -60,7 +60,7 @@ document.querySelector("#submit_button").click();
 }
 (function loop() {
 var date = new Date();
-    var rand = Math.round(Math.random() *12);
+    var rand = Math.round(Math.random() *14);
     setTimeout(function() {
       doSomething();
  console.log("Delayed " + rand + " Secs" );
@@ -75,5 +75,5 @@ clearInterval(timer2);
 console.log("injected ");
 
   }
-}, 3500);
+}, 4000);
 })();
