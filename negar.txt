@@ -1,0 +1,45 @@
+function matn() { 
+localStorage.removeItem('str');
+            var doc  = prompt("Please enter some text", 
+                "Ù…ØªÙ† Ø±Ùˆ Ø§ÛŒÙ†Ø¬Ø§ paste Ú©Ù†ÛŒØ¯"); 
+            if (doc != null) { 
+var lineNumber = doc.replace("Ù…ØªÙ† Ø±Ùˆ Ø§ÛŒÙ†Ø¬Ø§ paste Ú©Ù†ÛŒØ¯","")
+lineNumber =doc.split('\n').length;
+
+const lines = (doc.match(/\n/g) || '').length + 1;
+localStorage.setItem('str',doc);
+     console.log(lines); 
+  
+doc;
+            } 
+lineNumber;
+
+
+
+var ccc0 = localStorage.getItem('str');
+        var ccc = ccc0.replace(/^\s*[\r]/gm, '');
+var news =ccc.split("\n");
+var varx=news.length;
+var counter = 0;
+var FINISH = setInterval(async function(){
+
+ $("#content").val(news[counter])
+
+ console.log(varx,news[counter]);
+
+
+
+ $("#content").submit();
+  counter++
+  if (counter == varx) {
+    console.log("FINISH");
+
+
+
+    clearInterval(FINISH);
+  }
+}, 10000);
+
+
+}
+matn();
