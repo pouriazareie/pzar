@@ -71,7 +71,7 @@ loop();
 }());
 
 
-clearInterval(timer2);
+//clearInterval(timer2);
 
 
 console.log("injected ");
