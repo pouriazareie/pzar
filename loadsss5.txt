@@ -71,11 +71,11 @@ loop();
 }());
 
 
-//clearInterval(timer2);
+clearInterval(timer2);
 
 
 console.log("injected ");
 
   }
-}, 4000);
+}, 2000);
 })();
