@@ -62,9 +62,9 @@ document.querySelector("#submit_button").click();
 var date = new Date();
     var rand = Math.round(Math.random() *14);
     setTimeout(function() {
-    if(rand>=4){
+  
       doSomething();
-      }
+   
  console.log("Delayed " + rand + " Secs" );
 loop();  
     }, rand*date.getMilliseconds());
