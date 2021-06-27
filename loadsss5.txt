@@ -2,7 +2,6 @@
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 (async ()=>{
 
-await sleep(10000);
 if(! localStorage.getItem("textsends"))
 {
 console.log("textsend not exist");
@@ -53,6 +52,7 @@ String.prototype.shuffle = function() {
 
 document.querySelector("#content").value=textsendss.shuffle(4," ");
 
+      document.querySelector("#submit_button").click();
 
 
 
@@ -64,7 +64,6 @@ var date = new Date();
     setTimeout(function() {
   if(rand>=4){
       doSomething();
-      document.querySelector("#submit_button").click();
 
    }
  console.log("Delayed " + rand + " Secs" );
