@@ -122,6 +122,7 @@ $(document).ready(function(){
 	
 	boomAddCss('addons/voice_record/files/voice_record.css');
 	
+	
 });
 
 }
