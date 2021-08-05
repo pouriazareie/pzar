@@ -1,7 +1,7 @@
 if(!$( "#rec" ).length){
 
 
-alert("set remainingTime to 180 secend & mp3 quality  bitRate to  44 if you want change it refer to line  ")
+alert("set remainingTime to 180 secend & mp3 quality  bitRate to 44 if you want change it refer to  comment line with same title ")
 
 
 URL = window.URL || window.webkitURL;
