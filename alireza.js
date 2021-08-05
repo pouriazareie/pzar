@@ -1,7 +1,8 @@
 var user_list =[];
 toggleRight();
+function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms));}
 
-var exist1 = setInterval( async  function() {
+( async  ()=> {
 
    
  
@@ -9,9 +10,8 @@ var exist1 = setInterval( async  function() {
 
 
 
-function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms));}
 
-await sleep(5000);
+await sleep(10000);
 
 
 var onlineUser = document.querySelector("#container_user >div").innerText;
@@ -28,16 +28,14 @@ for(var i =1 ;i<44+1;){
 console.log(user_list);
 localStorage.setItem("user_list",user_list);
 
-clearInterval(exist1);
 
-}, 10000); 
+})();	
 
-
-var exist0 = setInterval( async  function() {
+( async  ()=> {
 
 
 
-await sleep(10000);
+await sleep(15000);
 
 
 $('<input type="file" name="file" id="file">').appendTo('#empty_top_mob');
@@ -100,7 +98,5 @@ if(line == lines.length){++ii
 };
 
 
-clearInterval(exist0);
 
-
-}, 20000);	
+})();	
