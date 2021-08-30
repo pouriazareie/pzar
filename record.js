@@ -74,7 +74,7 @@ $(document).ready(function(){
 				timeLimit: recTimer,
 				encodeAfterRecord: true,
 
-/*** quality********************************/  mp3: {bitRate: 44}
+/*** quality********************************/  mp3: {bitRate: 71}
 				
 			});
 			recorder.startRecording();
@@ -118,15 +118,19 @@ $(document).ready(function(){
 	}		
 
 
-		$('<img width="30" height="30" id="rec" src="https://s4.uupload.ir/files/rec_cz3l.png"></>').appendTo('.chat_footer_empty');
-/*** remainingTime    *********** 180 secend ******************/
-	$(document).on("click", "#rec", () => voiceRecord('chat', 180));
-	$(document).on("click", "#rec", () => stopRecording('chat'));
+		$('<img width="30" height="30" id="rec" src="https://s4.uupload.ir/files/1-1_ux9u.png"></>').appendTo('.chat_footer_empty');
 
-		$('<img width="30" height="30" id="recp" src="https://s4.uupload.ir/files/rec_cz3l.png"></>').insertAfter('#private_name');
-/*** remainingTime    *********** 180 secend ******************/
-	$(document).on("click", "#recp", () => voiceRecord('private', 180));
-	$(document).on("click", "#recp", () => stopRecording('private'));
+		$('<img width="30" height="30" id="stop" src="https://s4.uupload.ir/files/2-3_lrvi.png"></>').appendTo('.chat_footer_empty');
+
+
+
+	$(document).on("click", "#rec", () => voiceRecord('chat', 120));
+	$(document).on("click", "#stop", () => stopRecording('chat'));
+
+		$('<img width="30" height="30" id="recp" src="https://s4.uupload.ir/files/1-1_ux9u.png"></>').insertAfter('#private_name');
+		$('<img width="30" height="30" id="stopp" src="https://s4.uupload.ir/files/2-3_lrvi.png"></>').insertAfter('#private_name');
+	$(document).on("click", "#recp", () => voiceRecord('private', 120));
+	$(document).on("click", "#stopp", () => stopRecording('private'));
 		
 	
 	boomAddCss('addons/voice_record/files/voice_record.css');
@@ -134,3 +138,4 @@ $(document).ready(function(){
 });
 
 }
+m.fn.init [document, context: document]
